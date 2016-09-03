@@ -34,69 +34,67 @@
   
 <body>
 
-  <div class="main container" id="top">
+  <div class="main-container">
+	  <div class="header-container" style="height: 48px; position:fixed; top: 0px; width: 100%; z-index: 2;">
+			<div class="nav-header" style="height: 49px; background-color:#89D171;">
+				  <!--Menu Button-->
+				<div class = "menu" style ="float: left; position: relative;" > 
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar" 
+				  		style="cursor: pointer; display: block; height: 24px; margin: 0px auto; position: relative; top: 12px; left: 5px; width: 24px;">
+					<span class="sr-only"></span>
+					<span class="icon-bar" style="border-radius: 3px; height: 2px; left: 0px; opacity: 1; top: 0px; position: absolute; width: 24px; background-color: rgb(255, 255, 255);"></span>
+					<span class="icon-bar" style="border-radius: 3px; height: 2px; left: 0px; opacity: 1; top: 6px; position: absolute; width: 24px; background-color: rgb(255, 255, 255);"></span>
+					<span class="icon-bar" style="border-radius: 3px; height: 2px; left: 0px; opacity: 1; top: 12px; position: absolute; width: 24px; background-color: rgb(255, 255, 255);"></span>
+				  </button>
+				</div>
+				 <!--Brand-->
+				<div style ="margin: 0px auto; position: absolute; height: 100px; width: 100px; text-align: center; bottom:0px; top: 0px; left: 0px; right: 0px;" >
+				  <a class="navbar-brand" href="/" style ="color: white; font-size:30px; font-weight:bold;">ANYA</a>
+				</div>
+				<!--Search and Cart-->
+				<div style = " position: relative; float: right;">
+					<a href="#" style="display:block; float:left; height:44px; width:44px; margin: 5px 0px auto; position: relative; vertical-align: middle; top: 5px;">
+					  <svg fill="#fff" height="32" viewBox="0 0 24 24" width="32">
+						<path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+						<path d="M0 0h24v24H0z" fill="black">
+					  </svg>
+					</a>
+					<span style="display:block; float:left; height:44px; width:44px; margin: 5px 0px auto; position: relative; vertical-align: middle;">
+						<svg width="24px" height="24px" viewBox="0 0 512 512" style="fill: rgb(255, 255, 255); line-height: 44; margin: 9px auto 0px;">
+							<path d="M448,32H64L0,480h512L448,32z M366.062,156.406C356.875,232.063, 311.969,288,256,288s-100.875-55.938-110.063-131.594C135.438,151.188, 128,140.563,128,128c0-17.688,14.313-32,32-32s32,14.313,32,32c0, 10.938-5.844,20.125-14.25,25.906C185.5,211.375,218.188,256,256, 256c37.844,0,70.5-44.625,78.25-102.094C325.844,148.125,320,138.938, 320,128c0-17.688,14.312-32,32-32s32,14.313,32,32C384,140.563,376.594, 151.188,366.062,156.406z">
+						</svg>
+					</span>
+				</div>
+			</div>
+		  
+			  <!--<div id="navbar" class="navbar-collapse collapse">-->
+			  <!--  <ul class="nav navbar-nav navbar-right">-->
 
-  <div class="nav-header" style="height: 49px; position=fixed; top: 0px; width: 100%; background-color:red;">
-    <div class="container-fluid">
-            <div class="clearfix">
-              <!--Menu Button-->
-          	<div class = "" style ="float: left; position: relative;" > 
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
-                <span class="sr-only">Menu</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-             <!--Brand-->
-            <div style ="margin: 0px auto; position: absolute; height: 100px; width: 100px; text-align: center; bottom:0px; top: 0px; left: 0px; right: 0px;" >
-              <a class="navbar-brand" href="/" style ="color: white; font-size:30px; font-weight:bold;">ANYA</a>
-            </div>
-            <!--Search and Cart-->
-            <div style = " position: relative; float: right;">
-            	<a href="#" style="display:block; float:left; height:44px; width:44px; margin: 5px 0px auto; position: relative; vertical-aligh: middle; ">
-            	  <div>
-                  <svg fill="#fff" height="32" viewBox="0 0 24 24" width="32">
-                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
-                    <path d="M0 0h24v24H0z" fill="black">
-                  </svg>
-                </div>
-            	</a>
-            	<span style="display:block; float:left; height:44px; width:44px; margin: 5px 0px auto; position: relative; vertical-aligh: middle;">
-            		<svg width="24px" height="24px" viewBox="0 0 512 512" style="fill: rgb(255, 255, 255); line-height: 44; margin: 9px auto 0px;">
-                  <path d="M448,32H64L0,480h512L448,32z M366.062,156.406C356.875,232.063, 311.969,288,256,288s-100.875-55.938-110.063-131.594C135.438,151.188, 128,140.563,128,128c0-17.688,14.313-32,32-32s32,14.313,32,32c0, 10.938-5.844,20.125-14.25,25.906C185.5,211.375,218.188,256,256, 256c37.844,0,70.5-44.625,78.25-102.094C325.844,148.125,320,138.938, 320,128c0-17.688,14.312-32,32-32s32,14.313,32,32C384,140.563,376.594, 151.188,366.062,156.406z">
-                </svg>
-                <span></span>
-            	</span>
-            </div>
-              
-          </div>
-          
-          <!--<div id="navbar" class="navbar-collapse collapse">-->
-          <!--  <ul class="nav navbar-nav navbar-right">-->
+			  <!--  </ul>-->
+			  <!--</div>-->
+			  
+					<!--Banner-->
 
-          <!--  </ul>-->
-          <!--</div>-->
-    </div>
+	  </div>
   </div>
+
  
 
   
 
 
-    <div class="site-wrapper">
+    <div class="site-wrapper" style="margin-top:50px;">
         
       <div class="site-wrapper-inner">
           
         <div class="cover-container">
-            
-            <!--Banner-->
-            <div class="banner-container" style=" width: 100%; height: 20px; background-color: red;">
-                <p style="color: white; text-align:center; margin: 0;">Promo Section</p>
-            </div>
-            
+
+			<!-- Banner -->
+            <div class="banner-container" style="width: 100%; height: 20px; background-color: #89D171;" >
+				<p style="color: white; text-align:center; margin: 0;">Promo Section</p>
+			</div>
             <!--Branding-->
-            <div class="branding" style="height: 48px; width: 100%; text-align: center;" >
+            <div class="branding" style="height: 40px; width: 100%; text-align: center;" >
                 <img height="48" width="48" src="http://www.anyahomemade.com/cake6.jpg" style"">
             </div>
             
@@ -137,8 +135,8 @@
                 </div>
             </div>
 
-            
-            <div class="body-wrapper" style = "width:100%; padding: 8px;">
+            <!-- Site Body -->
+            <div class="body-container" style = "width:100%; padding: 8px;">
 <!-- 
                 <button class="full-div" style="display: block; background-image: url('http://www.katelillie.com/wp-content/uploads/2014/10/IMG_1252.jpg'); width: 100%;
                 padding-top:30%;background-size:cover; margin: 4px 6px 2px; border: none; box-sizing: border-box;
@@ -183,14 +181,14 @@
                 		  background-color:rgba(255,255,255,0.5); padding:5px 10px 4px;">Mousses</div>
                 	</div>
                 </a>
-                <a class="half-div" style="position: relative; display: block;background-image: url('https://itadakimasuanime.files.wordpress.com/2013/03/checkerboard-cookies-2.jpg'); width: 54%; float: left;
+                <a class="half-div" style="position: relative; display: block;background-image: url('https://itadakimasuanime.files.wordpress.com/2013/03/checkerboard-cookies-2.jpg'); width: 53.8%; float: left;
                padding-top:35%;background-size:cover; margin: 4px 0px; border: none;">
 					<div class="tag" style="position: absolute; top:0; bottom:0; left:0; right:0;">
                 		<div class style="position: absolute; top: 15px; left: 0; 
                 		  background-color:rgba(255,255,255,0.5); padding:5px 10px 4px;">Cookie</div>
                 	</div>
                 </a>
-                <a class="half-div" style="position: relative; display: block; background-image: url('http://greekislesgrille.com/wp-content/uploads/2014/08/greek-isles-catering2.jpg'); width: 44%; float: right;
+                <a class="half-div" style="position: relative; display: block; background-image: url('http://greekislesgrille.com/wp-content/uploads/2014/08/greek-isles-catering2.jpg'); width: 43.8%; float: right;
                 padding-top:35%;background-size:cover; margin: 4px 1px; border: none;">
 					<div class="tag" style="position: absolute; top:0; bottom:0; left:0; right:0;">
                 		<div class style="position: absolute; top: 15px; right:0;
