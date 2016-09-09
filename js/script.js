@@ -39,7 +39,7 @@ function initMap() {
   
   var map = new google.maps.Map(mapDiv, {
       zoom: 15,
-      center: myLatLng,
+      center: new google.maps.LatLng(41.841571,-87.652217),
       styles: [
        { 
        	  "featureType": "water", 
