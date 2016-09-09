@@ -80,5 +80,8 @@ ul li {
 	color: #000;
 }
 
+#anya-location {
+	display:hidden;
+}
 
-/* .map {display:none;} */
+}
