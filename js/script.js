@@ -2,12 +2,6 @@
 
 (function(win){
 	var doc = win.document;
-
-// 		var toggler = doc.createElement('a');
-// 		toggler.className = 'toggle-menu';
-// 		toggler.href = '#';
-// 		toggler.innerHTML = 'menu';
-// 		doc.querySelector('.nav-bar').appendChild(toggler);
 		
 		var toggler = doc.querySelector('.nav-bar a');
 		
@@ -37,9 +31,9 @@
 	}
 )(this);
 
-<!-- google map -->
+// google map
 function initMap() {
-   var myLatLng = {lat: 41.841571, lng: -87.652217};
+  var myLatLng = {lat: 41.841571, lng: -87.652217};
   
   var mapDiv = document.getElementById('map');
   
@@ -96,7 +90,8 @@ var btn = window.document.querySelector('#load-map');
 $("i").on("click", function(){
 		window.alert("Hello world!!!!");											
 //         $(".map").hide();
-		$(".map").load("resources/google-map.html");
+		// 
+		initMap();
 
       });
 
