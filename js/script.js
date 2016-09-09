@@ -97,7 +97,7 @@ $("i").click(function(){
 			initMap();
 		}
 		else{$(".gm-style").remove();}
-		$("#anya-location").toggle();
+		$("#anya-location").toggle('slow');
 
 		
       });
