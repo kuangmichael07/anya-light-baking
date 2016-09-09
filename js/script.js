@@ -96,7 +96,7 @@ $("i").click(function(){
 		if ( $("#anya-location").css('display') == 'none'){
 			initMap();
 		}
-		else{removeClass("gm-style")}
+		else{$(".gm-style").remove();}
 		$("#anya-location").toggle();
 
 		
