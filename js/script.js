@@ -38,41 +38,41 @@ function initMap() {
   var mapDiv = document.getElementById('map');
   
   var map = new google.maps.Map(mapDiv, {
-      zoom: 15,
+      zoom: 14,
       center: new google.maps.LatLng(41.841571,-87.652217),
-      styles: [
-       { 
-       	  "featureType": "water", 
-       	  "stylers": [ 
-       			{ "hue": "#00ddff" }, { "saturation": -9 }, { "lightness": -56 } 
-       	  ] 
-       	},{ 
-       	  featureType: "poi",
-       	  stylers: [ 
-       	    { "hue": "#ff1a00" },
-       	    { "lightness": 26 }, 
-       	    { "saturation": 31 } 
-       	  ] 
-       	},{ 
-       	  featureType: "poi.park",
-       	  elementType: "geometry.fill", 
-       	  stylers: [ 
-       	    { "hue": "#00ff80" }, 
-       	    { "lightness": -4 }, 
-       	    { "saturation": -45 } 
-       	  ] 
-       	},{ 
-       	  featureType: "landscape.man_made", 
-       	  stylers: [ 
-       	    { "hue": "#ff0000" }, 
-       	    { "saturation": -68 }, 
-       	    { "lightness": -11 } 
-       	  ] 
-       	},{ 
-       	  featureType: "road.highway", 
-       	  stylers: [ 
-       	    { "color": "#808080" } 
-       	  ] },{ },{ } ]
+      //styles: [
+      // { 
+      // 	  "featureType": "water", 
+      // 	  "stylers": [ 
+      // 			{ "hue": "#00ddff" }, { "saturation": -9 }, { "lightness": -56 } 
+      // 	  ] 
+      // 	},{ 
+      // 	  featureType: "poi",
+      // 	  stylers: [ 
+      // 	    { "hue": "#ff1a00" },
+      // 	    { "lightness": 26 }, 
+      // 	    { "saturation": 31 } 
+      // 	  ] 
+      // 	},{ 
+      // 	  featureType: "poi.park",
+      // 	  elementType: "geometry.fill", 
+      // 	  stylers: [ 
+      // 	    { "hue": "#00ff80" }, 
+      // 	    { "lightness": -4 }, 
+      // 	    { "saturation": -45 } 
+      // 	  ] 
+      // 	},{ 
+      // 	  featureType: "landscape.man_made", 
+      // 	  stylers: [ 
+      // 	    { "hue": "#ff0000" }, 
+      // 	    { "saturation": -68 }, 
+      // 	    { "lightness": -11 } 
+      // 	  ] 
+      // 	},{ 
+      // 	  featureType: "road.highway", 
+      // 	  stylers: [ 
+      // 	    { "color": "#808080" } 
+      // 	  ] },{ },{ } ]
       
   });
   
