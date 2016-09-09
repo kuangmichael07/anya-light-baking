@@ -35,7 +35,7 @@
 function initMap() {
   //var myLatLng = {lat: 41.841571, lng: -87.652217};
   
-  var mapDiv = document.getElementById('map');
+  var mapDiv = document.getElementById('gg');
   
   var map = new google.maps.Map(mapDiv, {
       zoom: 15,
@@ -91,7 +91,7 @@ $("i").on("click", function(){
 		// alert("Hello world!!!!");											
 //         $(".map").hide();
 		// document.querySelector('#anya-location').css("");
-		$('#anya-location').load("resources/google-map.html");
+		// $('#anya-location').load("resources/google-map.html");
 		initMap();
 
       });
