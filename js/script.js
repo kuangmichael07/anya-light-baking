@@ -90,8 +90,8 @@ var btn = window.document.querySelector('#load-map');
 $("i").on("click", function(){
 		alert("Hello world!!!!");											
 //         $(".map").hide();
-		document.querySelector('#anya-location').css("");
-		document.querySelector('#anya-location').load("resources/google-map.html");
+		// document.querySelector('#anya-location').css("");
+		$('#anya-location').load("resources/google-map.html");
 		initMap();
 
       });
