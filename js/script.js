@@ -94,10 +94,9 @@ $("i").click(function(){
 		// $('#anya-location').load("resources/google-map.html");
 
 		if ( $("#anya-location").css('display') == 'none'){
-		
 			initMap();
 		}
-		
+		else{removeClass("gm-style")}
 		$("#anya-location").toggle();
 
 		
