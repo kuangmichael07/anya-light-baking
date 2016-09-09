@@ -87,14 +87,14 @@ function initMap() {
 //load google map
 var btn = window.document.querySelector('#load-map');
 
-$("i").on("click", function(){
+$("i").click(function(){
 		// alert("Hello world!!!!");											
 //         $(".map").hide();
 		// document.querySelector('#anya-location').css("");
 		// $('#anya-location').load("resources/google-map.html");
-		$("#anya-location").show();
-		initMap();
-
+		$("#anya-location").toggle("slow");
+		if($(".gm-style")===null){
+		initMap();}
       });
 
 // google map ends here
