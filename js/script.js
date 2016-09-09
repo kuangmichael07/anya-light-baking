@@ -92,7 +92,7 @@ $("i").click(function(){
 //         $(".map").hide();
 		// document.querySelector('#anya-location').css("");
 		// $('#anya-location').load("resources/google-map.html");
-		if(!document.getElementByClassName("gm-style")){
+		if(!document.getElementsByClassName("gm-style")){
 			alert("Hello world!!!!");
 			initMap();
 		}
