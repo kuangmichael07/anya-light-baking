@@ -49,6 +49,7 @@ ul li {
 	margin: 4px 30px 10px 30px;
 	position: relative;
 	height: 180px;
+	display:hidden;
 }
 
 .map-container {
