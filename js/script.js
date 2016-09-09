@@ -94,7 +94,7 @@ $("i").click(function(){
 		// $('#anya-location').load("resources/google-map.html");
 		// if($(".gm-style")===null){
 			initMap();
-		}
+		
 		$("#anya-location").toggle();
 
 		
