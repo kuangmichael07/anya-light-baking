@@ -37,12 +37,71 @@
 	}
 )(this);
 
+<!-- google map -->
 function initMap() {
+   var myLatLng = {lat: 41.841571, lng: -87.652217};
+  
   var mapDiv = document.getElementById('map');
+  
   var map = new google.maps.Map(mapDiv, {
-      center: {lat: 44.540, lng: -78.546},
-      zoom: 8
+      zoom: 15,
+      center: myLatLng,
+      styles: [
+       { 
+       	  "featureType": "water", 
+       	  "stylers": [ 
+       			{ "hue": "#00ddff" }, { "saturation": -9 }, { "lightness": -56 } 
+       	  ] 
+       	},{ 
+       	  featureType: "poi",
+       	  stylers: [ 
+       	    { "hue": "#ff1a00" },
+       	    { "lightness": 26 }, 
+       	    { "saturation": 31 } 
+       	  ] 
+       	},{ 
+       	  featureType: "poi.park",
+       	  elementType: "geometry.fill", 
+       	  stylers: [ 
+       	    { "hue": "#00ff80" }, 
+       	    { "lightness": -4 }, 
+       	    { "saturation": -45 } 
+       	  ] 
+       	},{ 
+       	  featureType: "landscape.man_made", 
+       	  stylers: [ 
+       	    { "hue": "#ff0000" }, 
+       	    { "saturation": -68 }, 
+       	    { "lightness": -11 } 
+       	  ] 
+       	},{ 
+       	  featureType: "road.highway", 
+       	  stylers: [ 
+       	    { "color": "#808080" } 
+       	  ] },{ },{ } ]
+      
+  });
+  
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'ANYA'
   });
 }
+
+
+//load google map
+var btn = window.document.querySelector('#load-map');
+
+$("i").on("click", function(){
+		window.alert("Hello world!!!!");											
+//         $(".map").hide();
+		$(".map").load("resources/google-map.html");
+
+      });
+
+// google map ends here
+
+
 
 

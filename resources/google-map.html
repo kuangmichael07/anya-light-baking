@@ -1,43 +1,7 @@
-// MAIN NAV
-
-(function(win){
-	var doc = win.document;
-
-// 		var toggler = doc.createElement('a');
-// 		toggler.className = 'toggle-menu';
-// 		toggler.href = '#';
-// 		toggler.innerHTML = 'menu';
-// 		doc.querySelector('.nav-bar').appendChild(toggler);
-		
-		var toggler = doc.querySelector('.nav-bar a');
-		
-		var sitewrap = doc.querySelector('.site-wrapper');
-		var menu = doc.querySelector('.main-nav ul');
-		sitewrap.style.marginTop = '50px';
-		menu.style.height = '0px';
-
-		toggler.addEventListener('click',function(e) {
-			e.preventDefault();
-			if (menu.style.height == '0px') {
-				sitewrap.style.marginTop = '160px';
-				menu.style.height = 'auto';
-				menu.style.display = 'block';
-
-				if (menu.clientHeight != 0) {
-					menu.style.height = menu.clientHeight+'px';
-					
-				}
-			} else {				
-				sitewrap.style.marginTop = '50px';
-				menu.style.height = '0px';
-				menu.style.display = 'none';
-
-			}
-		});
-	}
-)(this);
-
+        	
+        	
 <!-- google map -->
+<script>
 function initMap() {
    var myLatLng = {lat: 41.841571, lng: -87.652217};
   
@@ -88,20 +52,17 @@ function initMap() {
     title: 'ANYA'
   });
 }
+</script>
 
-
-//load google map
-var btn = window.document.querySelector('#load-map');
-
-$("i").on("click", function(){
-		window.alert("Hello world!!!!");											
-//         $(".map").hide();
-		$(".map").load("resources/google-map.html");
-
-      });
-
-// google map ends here
-
-
-
-
+        <h3>ANYA's Location</h3>
+        	<div class="map-canvas">
+        		<div class="map-container">
+					<div id="map">
+					</div>
+				</div>
+				<div class="map-info">
+				<p>
+<!-- 				Anya locates at <a href="#">Bridgeport</a> -->
+				</p>
+				</div>
+        	</div>
