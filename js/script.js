@@ -35,7 +35,7 @@
 function initMap() {
   //var myLatLng = {lat: 41.841571, lng: -87.652217};
   
-  var mapDiv = document.getElementById('gg');
+  var mapDiv = document.getElementById('anya-location');
   
   var map = new google.maps.Map(mapDiv, {
       zoom: 15,
