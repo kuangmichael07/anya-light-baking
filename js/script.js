@@ -88,7 +88,7 @@ function initMap() {
 var btn = window.document.querySelector('#load-map');
 
 $("i").on("click", function(){
-		window.alert("Hello world!!!!");											
+		alert("Hello world!!!!");											
 //         $(".map").hide();
 		document.querySelector('#anya-location').load('resources/google-map.html');
 		initMap();
