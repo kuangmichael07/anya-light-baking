@@ -33,7 +33,7 @@
 
 // google map
 function initMap() {
-  //var myLatLng = {lat: 41.841571, lng: -87.652217};
+  var myLatLng = {lat: 41.841571, lng: -87.652217};
   
   var mapDiv = document.getElementById('map');
   
@@ -92,7 +92,7 @@ $("i").on("click", function(){
 //         $(".map").hide();
 		// document.querySelector('#anya-location').css("");
 		// $('#anya-location').load("resources/google-map.html");
-		$(".map-canvas").show();
+		$(".map-canvas").hide();
 		initMap();
 
       });
